@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rocket Q - Perguntas e Respostas</title>
+
+    <!-- View Port -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/styles/global.css" />
+    <link rel="stylesheet" href="/styles/room.css" />
+    <link rel="stylesheet" href="/styles/modal.css" />
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="room" class="content">
+      <header>
+        <a href="./home.html">
+          <img src="assets/logo.svg" alt="Logotipo Rocket" />
+        </a>
+        <div class="buttons">
+          <div class="button outlined">
+            #323243
+            <img src="assets/copy.svg" alt="Copiar número da sala" />
+          </div>
+          <a href="#" class="button">
+            <img src="assets/users-white.svg" alt="Criar sala" />
+            -->Criar Sala
+          </a>
+        </div>
+      </header>
+      <main>
+        <section id="question-form">
+          <h2>Faça sua pergunta</h2>
+          <form action="">
+            <label class="sr-only" for-id="question"
+              >O que você quer perguntar</label
+            >
+            <textarea
+              name="question"
+              id="question"
+              placeholder="O que você quer perguntar?"
+              maxlength="1000"
+            ></textarea>
+            <footer>
+              <div>
+                <img src="./assets/privacy.svg" alt="Anônimato" />
+                Esta pergunta tem anônimato.
+              </div>
+              <button>Enviar</button>
+            </footer>
+          </form>
+        </section>
+
+        <!-- Sessão Questões -->
+        <section id="questions">
+          <h2 class="sr-only">Perguntas recentes</h2>
+          <div class="questions">
+            <!-- Primeira  Pergunta -->
+
+
+            <div class="question-wrapper">
+              <div class="question-content">
+                <div class="user">
+                  <img src="assets/user.svg" alt="Imagem do usuário" />
+                </div>
+
+                  <div class="question">
+                    <p>Qual a diferença entre const, var e let no Javascript?</p>
+                  </div>
+              </div>
+              
+              <div class="actions">
+                <a href="#" class="check">
+                  <img src="assets/check.svg">
+                  Marcar como lida
+                </a>
+
+                <a href="#" class="delete">
+                  <img src="assets/trash.svg" alt="Excluir">
+                  Excluir
+                </a>
+              </div>
+          </div>
+
+          <!-- Fim da Primeira Pergunta -->
+
+
+          <!-- 2 Segunda Pergunta  -->
+         
+          
+          <div class="question-wrapper">
+            <div class="question-content">
+              <div class="user">
+                <img src="assets/user.svg" alt="Imagem do usuário" />
+              </div>
+
+                <div class="question">
+                  <p>O que é Javascript?</p>
+                </div>
+            </div>
+            
+            <div class="actions">
+              <a href="#" class="check">
+                <img src="assets/check.svg">
+                Marcar como lida
+              </a>
+
+              <a href="#" class="delete">
+                <img src="assets/trash.svg" alt="Excluir">
+                Excluir
+              </a>
+            </div>
+        </div>
+
+          <!-- FIm da segunda Pergunta -->
+
+
+          <!-- PERGUNTA 2.5 -->
+
+
+          <div class="question-wrapper">
+            <div class="question-content">
+              <div class="user">
+                <img src="assets/user.svg" alt="Imagem do usuário" />
+              </div>
+
+              <div class="question">
+                <p>Quais são as principais linguagens de programação que as empresas costumam cobrar dos desenvolvedores front end e qual delas é a mais comum, ou seja, a que é cobrada na maioria das empresas? Além disso, qual das linguagens é a linguagem que está presente na maioria dos projetos de front end na área?</p>
+              </div>
+            </div>
+            
+            <div class="actions">
+              <a href="#" class="check">
+                <img src="assets/check.svg">
+                Marcar como lida
+              </a>
+
+              <a href="#" class="delete">
+                <img src="assets/trash.svg" alt="Excluir">
+                Excluir
+              </a>
+            </div>
+        </div>
+          <!-- FIM DA PERGUNTA 2.5 -->
+
+           <!-- 3 Terceira pergunta -->
+           
+           
+           <div class="question-wrapper read">
+            <div class="question-content">
+              <div class="user">
+                <img src="assets/user.svg" alt="Imagem do usuário" />
+              </div>
+
+                <div class="question">
+                  <p>O que é TypeScript?</p>
+                </div>
+            </div>
+            
+            <div class="actions">
+              <a href="#" class="delete">
+                <img src="assets/trash.svg" alt="Excluir">
+                Excluir
+              </a>
+            </div>
+        </div>
+      
+          <!-- Fim da terceira pergunta -->
+
+        </section>
+      </main>
+    </div>
+
+   <!----- MODAL ------>
+   <div class="modal-wrapper">
+    <div class="modal">
+        <h2>Excluir Pergunta</h2>
+        <p>Tem certeza que você deseja excluir esta pergunta?</p>
+
+        <form action="#">
+            <label class="sr-only" for-id="password">Digite sua senha admin</label>
+            <input type="password" id="password" name="password" placeholder="Digite sua senha" />
+
+            <div class="buttons">
+                <div class="button gray">Cancelar</div>
+                <button class="red">Sim, excluir</button>
+            </div>
+        </form>
+
+    </div>
+</div>
+
+
+
+
+
+
+
+
+  </body>
+</html>

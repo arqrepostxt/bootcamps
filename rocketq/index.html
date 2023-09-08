@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Redirecionando...</title>
+</head>
+<body>
+  <h2>Redirecionando para a página</h2>
+<p>A página está sendo redirecionada em 3 segundos.</p>
+
+<button onclick="myFunction()">Redirecionar agora</button>
+
+<script>
+   function myFunction() {
+  location.replace("./home.html")
+}
+         setTimeout(function(){
+            window.location.href = './home.html';
+         }, 3000);
+      </script>
+</script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Central Test</title>
+</head>
+<style>
+    body{
+        background-color: black;
+        color: white;
+    }
+    p{
+        font-size: 3rem;
+    }
+    input{
+        height: 2rem;
+        font-size: 2rem;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .main{
+        text-align: center;
+    }
+</style>
+<script>
+
+function rustKo(val) 
+{
+    if(val.length == 2){ 
+if(val.toUpperCase() == "NO"){
+    console.log(val.toUpperCase()    );
+
+    var element = document.getElementsByTagName("html")[0];
+    element.innerHTML = '<style>body{background-color:black;color:white;}</style><body><div class="main2" style="text-align:center;font-size:3rem;"><p>Test</p><p>Hello, Hello!</p><p>Can you Hear me?</p><p>CARREGOU</p></div></body>';
+}
+else{
+
+}
+
+}
+if (val.length == 3){
+    if(val.toUpperCase() == "YES"){
+        console.log("Função console");
+    }
+
+}
+    else {
+    }
+}
+
+</script>
+<body><div class="main">
+
+    <p>Test</p>
+    <p>Hello, Hello!</p>
+    <p>Can you Hear me?</p>
+    <form id="relista">
+        <input type="text" oninput="rustKo(this.value)" onchange="rustKo(this.value)">
+    </form>
+</div>
+</body>
+</html>

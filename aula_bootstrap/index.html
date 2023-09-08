@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha página inicial</title>
+</head>
+<script>
+    function myAct(gim) {
+gim = gim;
+set = 'confa';
+stage = 0;
+if ( gim == set) {
+            console.log("Parceiros mudados");
+            if (stage != 1){
+                console.log("Stage 1");
+                var element = document.getElementById("parceiros");
+            element.classList.add('mudarvis');
+            
+            var element = document.getElementById("servicos");
+            element.classList.add('mudarvis');
+
+            var element = document.getElementById("quem-somos");
+            element.classList.remove('mudarvis');
+
+            stage = 1;
+            console.log(stage);
+            }
+          
+        } 
+
+        if ( gim == 'confb') {
+            console.log("Nossos parceiros");
+            if (stage != 2 ) {
+                console.log("Stage 2");
+                var element = document.getElementById("quem-somos");
+            element.classList.add('mudarvis');
+            
+            var element = document.getElementById("servicos");
+            element.classList.add('mudarvis');
+
+            var element = document.getElementById("parceiros");
+            element.classList.remove('mudarvis');
+
+            stage = 2;
+            console.log(stage);
+
+            }
+            
+        } 
+
+        if ( gim == 'confc') {
+            console.log("Stage 3 ");
+            if (stage != 3 ) {
+
+            var element = document.getElementById("quem-somos");
+            element.classList.add('mudarvis');
+            
+            var element = document.getElementById("parceiros");
+            element.classList.add('mudarvis');
+
+            var element = document.getElementById("servicos");
+            element.classList.remove('mudarvis');
+
+            stage = 3;
+            console.log(stage);
+
+        } 
+
+    }
+    }
+</script>
+<style>
+    
+</style>
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">
+            <img src="img/sesg.png" width="80" height="80">
+        </a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0" >
+                <li class="nav-item" >
+                    <a class="nav-link" onclick="myAct('confa')" href="#quem-somos">Quem somos?</a>
+                </li>
+                <li class="nav-item" >
+                    <a class="nav-link" onclick="myAct('confb')" href="#parceiros">Parceiros</a>
+                </li>
+                <li class="nav-item" >
+                    <a class="nav-link" onclick="myAct('confc')" href="#servicos">Serviços</a>
+                </li>
+            </ul>
+        </div>
+        
+    </nav>
+    <section id="quem-somos">
+        <div class="container-fluid aboutus text-center margie">
+            <h1 class="margie">Sobre nós</h1>
+            <img src="img/pexels-andre-furtado-3859984.jpg" class="rounded-circle" width="300" height="300">
+            <h2>Somos uma empresa comprometida com a sustentabilidade em nosso trabalho</h2>
+            <div class="text-center">
+                <p>Trabalhamos com os valores relativos à busca por o aproveitamento de recursos com menor impacto ambiental e buscando garantir a harmonia desenvolvimento econômico e sustentabilidade</p>
+            </div>
+            
+        </div>
+    </section>
+    <section id="parceiros" class="mudarvis">
+        <div class="container-fluid partners text-center margie">
+            <h1 class="margie">Parceiros</h1>
+            <div class="container">
+               <div class="row">
+                    <div class="col-lg-4" style="transform: rotate(90deg)">
+                        <img src="img/sesg.png" width="100%">
+                    </div>
+                    <div class="col-lg-4">
+                        <img src="img/sesg.png" width="100%" style="transform: rotate(45deg);">
+                    </div>
+                    <div class="col-lg-4">
+                        <img src="img/sesg.png" width="100%">
+                    </div>
+               </div>            </div>
+        </div>
+    </section>
+    <section id="servicos" class="mudarvis">
+        <div class="container-fluid services text-center margie">
+            <h1 class="margie">Serviços</h1>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <p>Acessoria para Planejamento de Resiliência às mudanças climáticas</p>
+                        <img src="img/pexels-ian-lavrinovich-8961279.jpg" width="300px">
+                    </div>
+                    <div class="col-lg-4">
+                        <p>Avaliação de Impacto Ambiental</p>
+                        <img src="img/pexels-tom-dubois-11020203.jpg" width="300px">
+                    </div>
+                    <div class="col-lg-4">
+                        <p>Estudos de Urbanização</p>
+                        <img src="img/pexels-festus-obi-10824946.jpg" width="300px">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<footer class="container-fluid text-center bg-footer margie">
+    Desenvolvido por Samuel Mendes <a href="github.com/pysmendes">@pysmendes</a>
+</footer>
+</body>
+
+</html>
