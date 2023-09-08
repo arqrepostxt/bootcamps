@@ -1,0 +1,80 @@
+body {
+    background-color: rgb(25, 33, 59);
+    font-family:  'Ubuntu', sans-serif, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+
+.quadroImagem{
+  align-self: center;
+  text-align: center;
+  width: 320px;
+}
+
+#miniatura {
+  width: 20rem;
+}
+.txtLabel{
+  display: flex;
+}
+
+button{
+  font-size: 32px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.divTable{
+  display: flex;
+  color:rgb(194, 179, 149);
+  width: fit-content;
+  margin-top: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #26264e;
+  border: 0.6vw;
+  border-style:solid;
+}
+
+.divTableRow{
+  display: flex;
+  align-items:baseline;
+}
+.divTableBody{
+  width: 50vw;
+}
+
+
+.divTableCellSup{
+  font-weight: bold;
+  padding-left: 5px;
+  padding-bottom: 2px;
+  padding-top: 2px;
+  font-size: 36px;
+
+}
+
+
+
+.divTableCellInf{
+  padding-bottom: 5px;
+  padding-top: 5px;
+  font-size: 28px;
+  padding-left: 20px;
+
+}
+
+form{
+  color:yellow;
+  text-align: center;
+}
+
+input {
+  box-sizing: border-box;
+  padding: 0.5rem;
+  font-size:1rem;
+  display: block;
+  margin: 0.8rem auto;
+}
+
+.foot{
+  color:gainsboro;
+}

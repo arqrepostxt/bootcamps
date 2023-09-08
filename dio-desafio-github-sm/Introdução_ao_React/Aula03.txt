@@ -1,0 +1,7 @@
+## Rendereização Condicional
+- Operador ternário
+- If inline com o Operador lógico &&
+- Arrow function
+- If-Else Inline com Operador Condicional
+- Evitando que um componente seja renderizado
+## Listas e Chaves

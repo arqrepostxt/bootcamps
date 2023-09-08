@@ -1,0 +1,68 @@
+Aula 2 - Configurar Webpack em um novo projeto ReactJS
+
+
+
+
+# Instalar o React 
+ **Por a ocorrência de erros na instalação do React, decidi procurar
+uma forma alternativa de instalação e encontrei o create-react-app**
+
+1. Abrir terminal
+2. Comando:
+    > npm install -g create-react-app
+
+## Criar novo projeto react
+1. Abrir terminal
+2. Comando:
+    > create-react-app projetoabc
+3. Abrir a pasta do projeto no terminal
+4. Usar o comando:
+    > npm init
+
+## JSX
+1. Na pasta do projeto usar comando:
+    > npm install jsx
+
+
+## Instalar o webpack
+    > É um module blunder em ES para HTML
+3. Ir para a pasta selecionada para receber o node_modules
+1. Adicionar o webpack config js na pasta raiz
+2. Abrir o terminal na pasta selecionada
+4. Comando : npm init
+5. Comando : npm i -D webpack webpack-cli
+
+
+## Instalar o Babel loader para webpack
+Tranformar o código do react para ser lido em ES6 no navegador
+
+
+
+npm i babel-loader @babel/core @babel/preset-env @babel/preset-react --save dev
+
+npm install -D babel-loader @babel/core @babel/preset-env @babel/preset-react webpack
+
+Criar o arquivo .babelrc e configurar
+
+
+## Configurar development mode
+
+- Acrescetar o script no arquivo package.json
+    > "build": "webpack --mode production", 
+    > "dev": "webpack --mode development",
+
+## Configurar o aplicativo
+- Acrescentar src/App.js e src/index.js
+- Instalar o loader html para webpack
+    > html-webpack-plugin@4 html-loader 
+
+
+Instalar o Html loader e o Eslint
+
+Encontrei alguns pacotes obsoletos com substitutoss
+
+**eslint-loader**
+O eslint-loader está obsoleto e agora se usa **eslint-webpack-plugin**
+
+**babel-eslint**
+O babel-eslint está obsoleto e agora se usa **@babel/eslint-parser**

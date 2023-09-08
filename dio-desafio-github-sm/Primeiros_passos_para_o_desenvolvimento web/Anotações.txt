@@ -1,0 +1,13 @@
+Stacks são pilhas de tecnologia. Se constitui como um conjuto de softwares necessários e suficientes para executar um aplicativo. Representa um ambiente tecnológico com ferramentas e capacidades que estão disponíveis.
+Se relaciona com as capacidades e limitações e com a presença de pontos fortes e fracos no software ou aplicativo.
+
+A importância de stacks se dá na informação do cenário para os líderes de projetos que precisam reconhecer as capacidades e limitações das equipes de desenvolvimento da empresa, e do mesmo modo, desenvolvedores podem tomar conhecimento das limitações e capacidades dos recursos que têm disponíveis.
+
+
+Se relaciona com as estratégias de negócio, potencialmente relaciona os diferenciais ou aprimoramentos em relação aos concorrentes.
+Apresenta a maturidade do desenvolvimento tecnológico da empresa.
+
+Stacks são informações importantes para serem consideradas para contratações, planos de mitigações de risco, aumento da capacidade e etc.
+
+
+Sinte que eu utilizei como fonte de dados para conhecer stacks de big techs: https://stackshare.io/

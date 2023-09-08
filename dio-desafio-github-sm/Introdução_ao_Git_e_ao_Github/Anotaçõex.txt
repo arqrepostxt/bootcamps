@@ -1,0 +1,10 @@
+O GitHub exige um novo meio de autenticação e é preciso definir uma chave SSH para fazer o commit.
+##A criação de chave SSH ed25519##
+Eu devo usar o comando ssh-keygen -t ed25519 -C "meu email" no terminal para gerar a chave privada e pública no formato ed25519
+## Como adicinoar a chave SSH ao GitHub ##
+- Eu devo verificar o diretório onde as chaves foram criadas e acessar o arquivo com a chave pública, cuja extensão é *.pub. 
+- Depois, eu devo acessar https://github.com/settings/keys e ir na opção para adicionar uma nova chave SSH.
+- Eu copio o texto contido na chave pública *.pub e colo em Key na página de criação de nova chave no github, nomeio a chave e salvo.
+## Primerio uso ##
+- Durante o primeiro uso vai aparecer uma mensagem informando sobre a associação da chave e eu devo digitar "yes" para confirmar e realizar o primeiro uso.
+- Os usos seguintes já estarão configurados com a chave.
