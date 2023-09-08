@@ -1,0 +1,158 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(243, 243, 243);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.cinstagram-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 60%;
+    height: 100vh;
+}
+
+.cinstagram-phone{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    width: 50%;
+}
+
+.cinstagram-phone img{
+    height: 50rem;
+}
+
+
+.cinstagram-continue{
+    display: flex;
+    align-items: center; /* horizontal */
+    justify-content: space-around; /* vertical */
+    flex-direction: column;
+    width: 50%;
+    min-height: 34rem;
+}
+
+.group{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ffffff;
+    width: 100%;
+    padding: 1.3rem 0;
+    border: 1px solid light;
+}
+
+.group:nth-child(1) {
+     min-height: 19rem;
+}
+
+.sinstagram-logo {
+    height: 3rem;
+}
+
+.sinstagram-profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.sinstagram-profile img {
+    height: 6rem;
+}
+
+.binstagram-login{
+    background:#0095f6;
+    color: #ffffff;
+    padding: 8px;
+    border-raius: 4px;
+}
+
+.binstagram-logout{
+    color: #0095f6;
+    margin-top: 1rem;
+}
+
+.another-user {
+    color: rgb(160, 160, 160);
+}
+
+.link-blue{
+    color: #0095f6;
+}
+
+.download-app{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1.3rem 0;
+}
+
+.download-links{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+}
+
+.link-app-download{
+    height: 3rem;
+    width: 10rem;
+    background-size: cover;
+}
+
+.link-app-download:nth-child(1) {
+    background-image: url("./src/apple-button.png");
+}
+
+.link-app-download:nth-child(2) {
+    background-image: url("./src/googleplay-button.png");
+}
+
+
+/* tratamento com media querias */
+
+
+@media (max-width: 1024px) {
+
+    body{
+        background-color: #ffffff;
+    }
+
+    .cinstagram-wrapper{
+        width: 90%;
+    }
+}
+
+@media (max-width: 650px) {
+    .cinstagram-phone{
+        width: 90%;
+    }
+
+    .cinstagram-continue{
+        width: 100%;
+    }
+
+    .group{
+        border: 1px solid transparent;
+    }
+}

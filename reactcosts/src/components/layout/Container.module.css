@@ -1,0 +1,23 @@
+.container {
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+/* Comentário : Permite que o conteúdo ocupe grande espaço na tela em altura  */
+.min-height {
+    min-height: 75%;
+}
+
+/* Conteúdos para o começo à esquerda */
+.start {
+    justify-content: flex-start;
+}
+
+/* Comentário: Layout de coluna. O FLEX vem em Linha, Colum converte para Colunar. Ver sobre FLEX BOX */
+.column {
+    flex-direction: column;
+    justify-content: flex-start;
+}

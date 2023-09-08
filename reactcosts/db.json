@@ -1,0 +1,73 @@
+{
+  "projects": [
+    {
+      "name": "Projeto de Novo Sistema",
+      "budget": "2100",
+      "category": {
+        "id": "5",
+        "name": "Pesquisa e Desenvolvimento"
+      },
+      "cost": 600,
+      "services": [
+        {
+          "name": "Serviço A",
+          "cost": "100",
+          "description": "DescSERVa",
+          "id": "a25fa8c2-d625-4c04-bbc1-a329cb853b21"
+        },
+        {
+          "name": "Etapa de Pesquisa",
+          "cost": "200",
+          "description": "Etapa focada na pesquisa",
+          "id": "5c5c6d5f-ecd1-4ae6-bb49-7cceaaa5ba3c"
+        },
+        {
+          "name": "Atividade de Processo C",
+          "cost": "300",
+          "description": "Serviço de Processo C",
+          "id": "8d14da93-4b6e-4c6a-945f-0839bc1df753"
+        }
+      ],
+      "id": 1
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Infra"
+    },
+    {
+      "id": 2,
+      "name": "Desenvolvimento"
+    },
+    {
+      "id": 3,
+      "name": "Design"
+    },
+    {
+      "id": 4,
+      "name": "Planejamento"
+    },
+    {
+      "id": 5,
+      "name": "Pesquisa e Desenvolvimento"
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
