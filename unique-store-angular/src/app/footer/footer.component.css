@@ -1,0 +1,43 @@
+.footer {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f7f7f7;
+  padding: 20px;
+  text-align: start;
+  border-top: 1px solid #ddd;
+}
+
+.contact-info {
+  flex: 1;
+  text-align: start;
+}
+
+.compliance {
+  flex: 1;
+  text-align: right;
+}
+.compliance p {
+  margin: 5px 0;
+}
+
+.developer {
+  background-color: black;
+  color: #c1c1c6;
+  text-align: center;
+  padding: 10px 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.compliance a {
+ color: darkblue;
+ font-size: 10px;
+}
+
+.developer a {
+  color: #ffffff;
+ }

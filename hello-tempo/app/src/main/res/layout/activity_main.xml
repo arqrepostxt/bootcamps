@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_logoTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textSize="40sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_margin="20dp" />
+
+    <TextView
+        android:id="@+id/tv_localLocationTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/local_location"
+        android:textSize="30sp"
+        app:layout_constraintTop_toBottomOf="@id/tv_logoTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="90dp" />
+
+    <TextView
+        android:id="@+id/tv_cityNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="30sp"
+        app:layout_constraintTop_toBottomOf="@id/tv_localLocationTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="20dp" />
+
+    <TextView
+        android:id="@+id/tv_localWeatherTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/local_weather"
+        android:textSize="30sp"
+        app:layout_constraintTop_toBottomOf="@id/tv_cityNameTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="30dp" />
+
+    <TextView
+        android:id="@+id/tv_cityTemperatureTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="30sp"
+        app:layout_constraintTop_toBottomOf="@id/tv_localWeatherTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="20sp" />
+
+    <RadioGroup
+        android:id="@+id/radio_group_language"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_margin="30sp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@id/tv_localtimeTextView"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <RadioButton
+            android:id="@+id/radio_english"
+            android:layout_width="wrap_content"
+            android:layout_height="50sp"
+            android:text="@string/option_english" />
+
+        <RadioButton
+            android:id="@+id/radio_spanish"
+            android:layout_width="wrap_content"
+            android:layout_height="50sp"
+            android:text="@string/option_spanish" />
+
+        <RadioButton
+            android:id="@+id/radio_french"
+            android:layout_width="wrap_content"
+            android:layout_height="50sp"
+            android:text="@string/option_french" />
+
+        <RadioButton
+            android:id="@+id/radio_portuguese"
+            android:layout_width="wrap_content"
+            android:layout_height="50sp"
+            android:text="@string/option_portuguese" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tv_localtimeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/local_time"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@id/tv_cityTimeTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="20dp" />
+
+    <TextView
+        android:id="@+id/tv_cityTimeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="20dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

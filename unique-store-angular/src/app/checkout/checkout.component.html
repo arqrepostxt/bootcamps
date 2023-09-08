@@ -1,0 +1,27 @@
+<div class="checkout-container">
+  <h3 class="checkout-header">Checkout</h3>
+
+  <div class="checkout-info">
+    <a routerLink="/shipping">
+      <em class="material-icons">flight_takeoff</em>Shipping cost
+    </a>
+  </div>
+
+  <form [formGroup]="checkoutForm" (ngSubmit)="onSubmit()" class="checkout-form">
+    <label for="name">Name</label>
+    <input id="name" type="text" formControlName="name" />
+
+    <label for="address">Address</label>
+    <input id="address" type="text" formControlName="address" />
+
+    <label for="contact">Contact</label>
+    <input id="contact" type="text" formControlName="contact" />
+
+    <div>
+      <input id="confirmCheckbox" type="checkbox" formControlName="confirmCheckbox" />
+      <label for="confirmCheckbox">I confirm that I have read the Shipping Policy, Refund Policy, and Terms of Service</label>
+    </div>
+
+    <button type="submit">Purchase</button>
+  </form>
+</div>

@@ -1,0 +1,23 @@
+<div class="cart-container">
+  <h3 class="cart-header">Cart</h3>
+
+  <div class="cart-info">
+    <a routerLink="/shipping">
+      <em class="material-icons">flight_takeoff</em>Shipping cost
+    </a>
+  </div>
+
+  <div class="cart-item" *ngFor="let item of items">
+    <span>{{ item.name }}</span>
+    <span>{{ item.price | currency }}</span>
+  </div>
+  <div class="cart-item" *ngIf="items.length > 0">
+    <span>Total</span>
+    <span>{{ getTotalSum()  | currency }}</span>
+  </div>
+
+  <form [formGroup]="cartForm" (ngSubmit)="onSubmit()" class="cart-form">
+
+    <button type="submit">Purchase</button>
+  </form>
+</div>

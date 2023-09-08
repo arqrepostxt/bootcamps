@@ -1,0 +1,40 @@
+<h2>Product Details</h2>
+
+<div *ngIf="product">
+  <h3>{{ product.name }}</h3>
+  <h4>{{ product.price | currency }}</h4>
+  <h4>Screen {{ product.screen | number }}″
+  </h4>
+  <p>{{ product.description }}</p>
+  <div class="product-ratings">
+    <a>
+      Batterry {{ product.battery | number }}
+      <ng-container *ngFor="let star of generateStars(product.battery)">
+        <em class="material-icons">star_rate</em>
+      </ng-container>
+    </a>
+    <a>
+      Graphics {{ product.graphics | number }}
+      <ng-container *ngFor="let star of generateStars(product.graphics)">
+        <em class="material-icons">star_rate</em>
+      </ng-container>
+    </a>
+    <a>
+      Storage {{ product.storage | number }}
+      <ng-container *ngFor="let star of generateStars(product.storage)">
+        <em class="material-icons">star_rate</em>
+      </ng-container>
+    </a>
+    <a>
+      Resistance {{ product.resistance | number }}
+      <ng-container *ngFor="let star of generateStars(product.resistance)">
+        <em class="material-icons">star_rate</em>
+      </ng-container>
+    </a>
+  </div>
+  <div class="product-buttons">
+    <button type="button" (click)="addToCart(product)">Buy</button>
+    <button type="button" (click)="share()">Share</button>
+    <button class="app-product-alerts" type="button" (click)="onNotify()">Notify</button>
+  </div>
+</div>

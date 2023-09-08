@@ -1,0 +1,17 @@
+[
+  {
+    "type": "Turbo",
+    "price": 25.99
+  },
+  {
+    "type": "Overnight",
+    "price": 14.99},
+  {
+    "type": "Express",
+    "price": 6.99
+  },
+  {
+    "type": "3-Day",
+    "price": 2.50
+  }
+]

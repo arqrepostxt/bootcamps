@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name" translatable="false">Hello Tempo</string>
+    <string name="local_time">Atualizado em:</string>
+    <string name="local_weather">Condição de tempo:</string>
+    <string name="local_location">Localidade:</string>
+    <string name="option_english">Inglês</string>
+    <string name="option_spanish">Espanhol</string>
+    <string name="option_french">Francês</string>
+    <string name="option_portuguese">Português</string>
+    <string-array name="array_languages">
+        <item>
+            English
+        </item>
+        <item>
+            Spanish
+        </item>
+        <item>
+            French
+        </item>
+        <item>
+            Portuguese
+        </item>
+    </string-array>
+</resources>

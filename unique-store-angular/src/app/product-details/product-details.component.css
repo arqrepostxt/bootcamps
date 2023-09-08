@@ -1,0 +1,35 @@
+.product-ratings {
+  margin-top: 10px;
+  background-color: #eee;
+  padding: 10px 20px 10px;
+  border-radius: 20px;
+  display: inline-block;
+  text-align: start;
+}
+
+.product-ratings a {
+  display: block;
+  margin-bottom: 5px;
+}
+
+
+.product-buttons {
+  margin-top: 10px;
+  display: block ruby;
+  justify-content: space-between;
+}
+
+.product-buttons button {
+  flex-grow: 1;
+  padding: 8px 16px;
+  border-radius: 8px;
+  background-color: #424242;
+  color: #ffffff;
+  margin: 0px 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

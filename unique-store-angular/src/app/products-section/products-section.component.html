@@ -1,0 +1,15 @@
+<h2>Products</h2>
+
+<div class="product-grid">
+  <div class="product-container" *ngFor="let product of products">
+      <a [title]="product.name + ' details'" [routerLink]="['/products', product.id]">
+        {{ product.name }}
+        <img src="assets/phones/{{ getProductImageReference(product.name) }}.png" alt="{{ product.name }} Image">
+       </a>
+    <p *ngIf="product.description">Description: {{ product.description }}</p>
+    <div class="product-buttons">
+      <button type="button">Take a look</button>
+
+    </div>
+  </div>
+</div>

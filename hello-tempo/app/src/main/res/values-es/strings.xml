@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="local_time">Actualizado por última vez en</string>
+    <string name="local_weather">Condiciones Meteorológicas</string>
+    <string name="local_location">Ubicación</string>
+    <string name="option_english">Inglés</string>
+    <string name="option_spanish">Español</string>
+    <string name="option_french">Francesa</string>
+    <string name="option_portuguese">Portugués</string>
+</resources>
