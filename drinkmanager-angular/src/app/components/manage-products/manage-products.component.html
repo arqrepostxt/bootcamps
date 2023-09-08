@@ -1,0 +1,92 @@
+<div class="inventory-list-container">
+  <div class="green-ellipse">
+    <span class="beverage-name" *ngIf="drinks.length === 0"> The list is empty </span>
+    <span class="beverage-name" *ngIf="drinks.length !== 0"> List of drinks </span>
+    <button (click)="openDialog()">Add new item</button>
+  </div>
+  <div class="green-ellipse" *ngFor="let drink of drinks; let i = index">
+
+    <div class="info-section" *ngIf="selectedItem !== i">
+        <span class="beverage-type">
+          <em class="material-icons" *ngIf="drink.type === 'Coffee'">coffee</em>
+          <em class="material-icons" *ngIf="drink.type === 'Water'">water_drop</em>
+          <em class="material-icons" *ngIf="drink.type === 'Juice'">blender</em>
+        </span>
+        <span class="beverage-name">
+         {{ drink.name }} ({{ drink.id }}) 
+        </span>
+        <span class="beverage-quantity">
+          {{ drink.quantity }}
+        </span>
+    </div>
+
+    <div class="edit-info-section" *ngIf="isEditMode && selectedItem === i">
+      <span class="edit-beverage-name" >
+        <span>Product name</span>
+        <form [formGroup]="editItemForm" (ngSubmit)="onSubmitUpdatedDrink(drink.id)">
+          <input
+            type="text"
+            #editedName
+            id="editedName"
+            formControlName="editedName"
+            required
+          />
+        </form>
+      </span>
+
+      <span class="edit-beverage-type">
+        <span>Product type</span>
+        <form [formGroup]="editItemForm" (ngSubmit)="onSubmitUpdatedDrink(drink.id)">
+          <select id="editedType" formControlName="editedType">
+            <option value="Coffee">Coffee</option>
+            <option value="Juice">Juice</option>
+            <option value="Water">Water</option>
+          </select>
+        </form>
+      </span>
+
+      <div class="beverage-quantity-input">
+        <span>Product quantity</span>
+        <span class="edit-beverage-quantity">
+          <form [formGroup]="editItemForm" (ngSubmit)="onSubmitUpdatedDrink(drink.id)">
+              <input
+              type="number"
+              #editedQuantity
+              id="editedQuantity"
+              formControlName="editedQuantity"
+              required
+              />
+          </form>
+        </span>
+
+        <button type="button" (click)="decrementItemQuantity()">-</button>
+        <button type="button" (click)="incrementItemQuantity()">+</button>
+      </div>
+
+    </div>
+    
+    <div class="operations-section">
+      <button (click)="onEditMode(i)" *ngIf="selectedItem !== i">
+        Edit✎
+      </button>
+      <button (click)="onSubmitUpdatedDrink(drink.id)" *ngIf="selectedItem === i">
+        Save changes↻
+      </button>
+      <button (click)="onDeleteDrink(drink.id)" *ngIf="selectedItem !== i">
+        Delete X
+      </button>
+    </div>
+
+    </div>
+  <div class="green-ellipse">
+    <span> Totais </span>
+    <span class="beverage-type">
+      <em class="material-icons">coffee</em>
+      {{ warehouseService.drinkCoffeeTotal }}
+      <em class="material-icons">blender</em>
+      {{ warehouseService.drinkJuiceTotal }}
+      <em class="material-icons">water_drop</em>
+      {{ warehouseService.drinkWaterTotal }}
+    </span>
+  </div>
+</div>

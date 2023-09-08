@@ -1,0 +1,22 @@
+<div class="home-container">
+  <div class="home-card">
+    <div>
+      <div class="title-section" *ngIf="credentialService.getLoggedIn() == false">
+        <h4>Welcome!</h4>
+        <span> Connect with us to manage your inventory of beverages. </span>
+      </div>
+      <div class="title-section" *ngIf="credentialService.getLoggedIn() == true">
+        <h4 >Welcome! {{ credentialService.getTypedUsername() }}</h4>
+        <span> Ready to Manage Drinks? </span>
+      </div>
+      <div class="welcome-section">
+        <a [routerLink]="['/manage']">
+          <div class="gray-ellipse">
+              <span class="store-text">Manage Drinks</span>
+            <em class="material-icons">arrow_forward</em>
+            </div>
+          </a>
+      </div>
+    </div>
+  </div>
+</div>

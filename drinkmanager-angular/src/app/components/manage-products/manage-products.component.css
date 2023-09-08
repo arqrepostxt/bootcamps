@@ -1,0 +1,169 @@
+.products-container {
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+input[type="text"] {
+  width: 100%;
+  font-size: 35px;
+  height: 40px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+input[type="number"] {
+  width: 40%;
+  font-size: 35px;
+  height: 40px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+button {
+  padding: 8px 12px;
+  background-color: #2f2fa2;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.green-ellipse {
+  height: fit-content;
+  background-color: #e2ffb5;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.beverage-type {
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.beverage-name {
+  flex-grow: 1;
+  text-align: left;
+  margin-left: 10px;
+}
+
+.beverage-quantity {
+  text-align: right;
+  margin-right: 10px;
+}
+
+
+
+.inventory-list-container {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+button {
+  padding: 8px 12px;
+  background-color: #2f2fa2;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.green-ellipse {
+  height: fit-content;
+  background-color: #e2ffb5;
+  border-radius: 30px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.info-section {
+  display: flex;
+}
+
+.edit-info-section {
+  padding-left: 10px;
+}
+
+.operations-section {
+  text-align: end;
+  padding-right: 20px;
+  margin-top: 5px
+}
+
+.beverage-name {
+  flex-grow: 1;
+  text-align: left;
+  margin-left: 10px;
+}
+
+.beverage-type {
+  margin-left: 10px;
+  align-items: center;
+}
+
+.beverage-quantity {
+  text-align: right;
+  margin-right: 10px;
+}
+
+.edit-beverage-name input[type="text"] {
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  width: 25vw;
+}
+
+.beverage-quantity-input {
+  display: flex;
+}
+.beverage-quantity-buttons {
+  display: flex;
+}
+
+.edit-beverage-quantity input[type="number"] {
+  text-align: right;
+  margin-right: 10px;
+  width: 8vw;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}

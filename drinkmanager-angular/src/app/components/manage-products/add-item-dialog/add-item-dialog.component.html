@@ -1,0 +1,55 @@
+<div class="dialog-container">
+
+  <div class="inventory-card">
+    <button (click)="closeDialog()">Close</button>
+    <form [formGroup]="addProductForm" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label>Title</label>
+        <input
+          type="text"
+          #name
+          id="name"
+          formControlName="name"
+          required
+          placeholder="Insert the product title..."/>
+      </div>
+      <div class="form-group">
+        <label for="type">Category</label>
+        <div class="type-options">
+          <label
+            (click)="selectOption('Coffee')"
+            [class.selected]="selectedOption === 'Coffee'">
+            <em class="material-icons">coffee</em> Coffee
+          </label>
+          <label
+            (click)="selectOption('Water')"
+            [class.selected]="selectedOption === 'Water'">
+            <em class="material-icons">water_drop</em> Water
+          </label>
+          <label
+            (click)="selectOption('Juice')"
+            [class.selected]="selectedOption === 'Juice'">
+            <em class="material-icons">blender</em> Juice
+          </label>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="quantity">Quantity</label>
+        <div class="quantity-input">
+          <input
+            type="number"
+            #quantity
+            id="quantity"
+            formControlName="quantity"
+            required/>
+          <div class="quantity-buttons">
+            <button type="button" (click)="decrementQuantity()">-</button>
+            <button type="button" (click)="incrementQuantity()">+</button>
+          </div>
+        </div>
+      </div>
+      <button type="submit">Register</button>
+    </form>
+  </div>
+
+</div>

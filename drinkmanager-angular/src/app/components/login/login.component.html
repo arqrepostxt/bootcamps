@@ -1,0 +1,10 @@
+<div class="login-container">
+  <div class="login-card">
+    <div *ngIf="showUsernameComponent" [@fadeInOut]>
+      <app-username (nextClicked)="toggleComponents()"></app-username>
+    </div>
+    <div *ngIf="!showUsernameComponent" [@fadeInOut]>
+      <app-password></app-password>
+    </div>
+  </div>
+</div>

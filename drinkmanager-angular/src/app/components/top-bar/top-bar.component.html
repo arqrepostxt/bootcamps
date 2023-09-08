@@ -1,0 +1,26 @@
+<div class="top-bar">
+  <div class="left-section">
+    <a routerLink="/home">
+    <div class="gray-ellipse">
+        <span class="store-text">DM Web</span>
+      </div>
+    </a>
+  </div>
+</div>
+
+  <div class="menu-nav">
+    <ul>
+      <li><a routerLink="/home" class="button fancy-button">
+        <em class="material-icons">home</em> Home
+      </a></li>
+      <li><a routerLink="/manage" class="button fancy-button">
+        <em class="material-icons">view_comfy_alt</em> Manage Drinks
+      </a></li>
+      <li><a routerLink="/login" class="button fancy-button" *ngIf="credentialService.getLoggedIn() == false">
+        <em class="material-icons">login</em> Login
+      </a></li>
+      <li><a (click)="onLogout()" class="button fancy-button" *ngIf="credentialService.getLoggedIn() == true">
+        <em class="material-icons">logout</em> Logout {{ credentialService.getTypedUsername() }}
+      </a></li>
+    </ul>
+  </div>

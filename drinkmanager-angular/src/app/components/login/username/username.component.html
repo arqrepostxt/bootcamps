@@ -1,0 +1,38 @@
+<div class="username-container">
+  <div class="username-card">
+    <div>
+      <div class="title-section">
+        <h4>Hi there!</h4>
+        <span> Explore more by connecting with us. </span>
+      </div>
+      <div class="profile-picture">
+        <!-- <img src=''  alt="avatar" /> -->
+        <span class="material-symbols-sharp"> account_circle </span>
+      </div>
+      <div class="login-ellipse">
+        <form [formGroup]="usernameForm">
+          <input
+            type="text"
+            class="username-text"
+            placeholder="Username"
+            formControlName="username"
+          />
+          <button 
+          type="button" 
+          class="forward-button" 
+          (click)="onNextClick()">
+            <span>Let's go!</span>
+            <em class="material-icons">arrow_forward</em>
+          </button>
+        </form>
+      </div>
+
+      <div class="info-section">
+        <span class="text-gray-500"
+          >Not a Member?
+          <a routerLink="/register" class="text-red-500">Register now!</a>
+        </span>
+      </div>
+    </div>
+  </div>
+</div>

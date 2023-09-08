@@ -1,0 +1,71 @@
+<div class="register-container">
+  <div class="register-card">
+    <div>
+      <div class="title-section">
+        <h4>Almost there!</h4>
+        <span> Fill the form bellow to register! </span>
+      </div>
+      <div class="profile-picture">
+        <!-- <img src="" alt="avatar" /> -->
+        <span class="material-symbols-sharp"> account_circle </span>
+      </div>
+
+      <div class="login-ellipse">
+        <form [formGroup]="registerForm">
+          <input
+            type="text"
+            class="first-name-text"
+            placeholder="First name"
+            formControlName="firstName"
+          />
+        </form>
+      </div>
+
+      <div class="login-ellipse">
+        <form [formGroup]="registerForm">
+          <input
+            type="text"
+            class="last-name-text"
+            placeholder="Last name"
+            formControlName="lastName"
+          />
+        </form>
+      </div>
+
+      <div class="login-ellipse">
+        <form [formGroup]="registerForm">
+          <input
+            type="text"
+            class="username-text"
+            placeholder="Username"
+            formControlName="login"
+          />
+        </form>
+      </div>
+
+      <div class="login-ellipse">
+        <form [formGroup]="registerForm">
+          <input
+            type="text"
+            class="password-text"
+            placeholder="Password"
+            formControlName="password"
+          />
+          <button 
+          type="button" 
+          class="forward-button" 
+          (click)="onSubmit()">
+            <span>Sign up</span>
+            <em class="material-icons">arrow_forward</em>
+          </button>
+        </form>
+      </div>
+
+      <div class="info-section">
+        <span>
+          Sign up to connect with us!
+        </span>
+      </div>
+    </div>
+  </div>
+</div>

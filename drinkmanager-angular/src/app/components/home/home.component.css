@@ -1,0 +1,43 @@
+.home-card {
+  background-color: #f9f9f9;
+  border-radius: 15px;
+  border: 1px solid #ccc;
+  width: 85%;
+  margin: 150px auto auto auto;
+  padding: 0 30px 20px 10px;
+}
+
+.title-section {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.welcome-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin-bottom: 80px;
+}
+
+.welcome-section a {
+  text-decoration: none;
+  color: white;
+}
+
+.gray-ellipse {
+  background-color: #0a9e32;
+  color: white;
+  border-radius: 32px;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  justify-content: center;
+  padding: 5px 30px;
+}
+
+.info-section {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+}
