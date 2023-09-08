@@ -1,0 +1,115 @@
+
+.darkBackground{
+  background-color: var(--material-black-87);
+}
+
+
+
+.newTaskButtonDark{
+  border: 1px solid var(--material-white-30);
+  color: var(--material-white-50);
+}
+
+.lightNewTaskButton{
+  background: transparent;
+  border: none;
+  color: var(--material-black-87);
+
+  width: 90px;
+  border-radius: 8px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 140%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  transition: 0.3s;
+}
+
+.newTaskButtonDark:disabled{
+  background: transparent;
+  color: var(--material-white-50)!important;
+}
+
+.lightNewTaskButton:disabled {
+  filter: grayscale(70%);
+  color: var(--material-black-50);
+  cursor: not-allowed;
+}
+
+.lightNewTaskButton:disabled svg {
+  fill: currentColor;
+
+}
+
+.lightNewTaskButton:disabled svg path {
+  fill: currentColor;
+}
+
+.done{
+  color: var(--material-white-70)!important;
+}
+
+.mainCreatedText{
+  color: var(--material-white-50)!important;
+}
+
+.textBar{
+  background-color: var(--material-black);
+  border: 1px solid var(--material-white-50);
+  color : var(--material-white-70);
+}
+
+.textBar::placeholder {
+  color: var(--material-white-70);
+}
+
+
+.editInput {
+}
+
+/* Task -Adds style to Edit and Save buttons */
+.emojiButton {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.save {
+}
+.darkTrashCan {
+fill: var(--material-white-70);;
+}
+
+.priority {
+  appearance: none;
+  background-color: transparent;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  padding: 4px;
+}
+
+.option {
+  /* color: #f1c40f;  */
+  font-size: 24px;
+  /* font-weight: bold; */
+  text-shadow: 1px 1px 1px #000000;
+  
+}
+
+  /* About  */
+  
+.darkDescription{
+  color: var(--material-white-50);
+  background-color: var(--material-black)!important;
+}
+
+body {
+}
+
+.darkBody {
+  background-color: black;
+}

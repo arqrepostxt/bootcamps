@@ -1,0 +1,33 @@
+.navbar {
+  position: fixed;
+  top: 50%;
+  right: 40px;
+  /* transform: translateY(-50%); */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+/* .navbar .floating-button {
+  margin-bottom: 30px;
+  margin-top: 30px;
+} */
+
+a:link {
+  color: darkcyan;
+  text-decoration: none;
+}
+
+a:hover {
+  margin-bottom: 30px;
+  color: blueviolet;
+}
+
+a:active{
+  color:red;
+}
+
+a:visited{
+  color: yellow;
+}
+

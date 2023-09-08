@@ -1,0 +1,40 @@
+{
+  "profile": [
+    {
+      "id": "1",
+      "firstName": "First Name",
+      "midleName": "Middle Name",
+      "lastName": "Last Name",
+      "date": ""
+    }
+  ],
+  "quotes": [
+    {
+      "id": "1",
+      "text": "Quote 1"
+    },
+    {
+      "text": "Notice 2",
+      "id": "ZBHYLdK"
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "Post Title",
+      "author": "Author Name"
+    }
+  ],
+  "attribution": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "licence": [
+    {
+      "text": "LICENSE"
+    }
+  ]
+}

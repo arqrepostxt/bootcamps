@@ -1,0 +1,16 @@
+
+:root {
+  --material-white: rgba(255, 255, 255, 1);
+  --material-white-70: rgba(255, 255, 255, 0.7);
+  --material-white-60: rgba(255, 255, 255, 0.6);
+  --material-white-50: rgba(255, 255, 255, 0.5);
+  --material-white-30: rgba(255, 255, 255, 0.3);
+
+  --material-black: rgba(0, 0, 0, 1);
+  --material-black-87: rgba(0, 0, 0, 0.87);
+  --material-black-70: rgba(0, 0, 0, 0.7);
+  --material-black-54: rgba(0, 0, 0, 0.54);
+  --material-black-50: rgba(0, 0, 0, 0.5);
+  --material-black-30: rgba(0, 0, 0, 0.3);
+  --temp: rgb(157 157 157 / 30%);
+}

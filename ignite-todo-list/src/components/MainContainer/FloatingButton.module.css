@@ -1,0 +1,33 @@
+
+.fabButton {
+  /* position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 9999;
+  font-size: 24px;  */
+  /* display: flex; 
+  flex-direction: column;
+  align-items: flex-end;
+  justifyContent: center; 
+  alignItems: center; */
+}
+
+
+/* Selects the first Navbar button */
+button:nth-child(3) {
+  /* display: none;
+  position: fixed;
+  top: 80px;
+  right: 20px;
+  top: 20px;
+  right: 20px;
+   z-index: 9999;*/
+  /* display: flex;  */
+  font-size: 24px; 
+  
+}
+
+
+/* Selects button Switch Theme */
+button:nth-child(2) {
+  }
