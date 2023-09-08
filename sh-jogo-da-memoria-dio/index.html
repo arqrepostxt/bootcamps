@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Desafio do Jogo da Memória</title>
+</head>
+<body>
+
+
+<div id="quadro-ranking" style="display: none; text-align: center;">
+    <div class="playing-buttons" style="display: flex; flex-direction: row;">
+        <button id="button-new-game" style="margin:5px; font-size: 1.3rem;">Novo jogo</button>
+        <button id="button-how-to-play" style="margin: 5px; font-size: 1.3rem;">Instruções</button>
+    <span id="timer" style="background-color: rgb(0, 0, 0); color: black; background-color: white; font-size: 1.5rem; align-self: center; margin: 5px;">--:--</span>
+        
+    </div>
+
+</div>
+<div id="brief" style="background-color: white;">
+    <div style="font-size: 3rem;text-align:justify; margin-right: 10px; margin-left: 10px;">Cadeia alimentar é uma sequência de seres vivos em que um serve de alimento para outro.
+    Você recebeu o desafio para jogar o jogo da memória para revelar todas as cartas dos seres vivos da seguinte cadeia alimentar: FITOPLÂNCTON, KRILL, PEIXE, GAIVOTA, FOCA-LEOPARDO e ORCA.
+    Para iniciar o desafio aguarde <span id="time-before-start">30</span> segundos ou use o botão JOGAR. 
+    <br><button id="button-start-game" style="font-size:2rem; margin-right: auto; margin-left: auto;">JOGAR</button></div>
+</div>
+
+<!-- <div>Na natureza, se forma uma numerosa quantidade de teias alimentares, que são interações entre várias cadeias alimentares diferentes de um determinado ecossistema.</div> -->
+
+
+
+
+<div>
+    <main id="quadro-principal" class="memory-game" style="display:none">
+        <div class="card" data-card="phytoplankton">
+            <img class="card-front" src="./img/phytoplankton.png" alt="Face da carta">
+            <img class="card-back" src="./img/box.png" alt="Verso da carta">
+        </div>
+        <div class="card" data-card="leopard-seal">
+            <img class="card-front" src="./img/leopard-seal.png" alt="Face da carta">
+            <img class="card-back" src="./img/box.png" alt="Verso da carta">
+        </div>
+        <div class="card" data-card="orca">
+            <img class="card-front" src="./img/orca.png" alt="Face da carta">
+            <img class="card-back" src="./img/box.png" alt="Verso da carta">
+        </div>
+        <div class="card" data-card="seagull">
+            <img class="card-front" src="./img/seagull.png" alt="Face da carta">
+            <img class="card-back" src="./img/box.png" alt="Verso da carta">
+        </div>
+        <div class="card" data-card="krill">
+            <img class="card-front" src="./img/krill.png" alt="Face da carta">
+            <img class="card-back" src="./img/box.png" alt="Verso da carta">
+        </div>
+        <div class="card" data-card="fish">
+            <img class="card-front" src="./img/fish.png" alt="Face da carta">
+            <img class="card-back" src="./img/box.png" alt="Verso da carta">
+        </div>
+        <div class="card" data-card="phytoplankton">
+            <img class="card-front" src="./img/phytoplankton.png" alt="Face da carta">
+            <img class="card-back" src="./img/box.png" alt="Verso da carta">
+        </div>
+        <div class="card" data-card="leopard-seal">
+            <img class="card-front" src="./img/leopard-seal.png" alt="Face da carta">
+            <img class="card-back" src="./img/box.png" alt="Verso da carta">
+        </div>
+        <div class="card" data-card="orca">
+            <img class="card-front" src="./img/orca.png" alt="Face da carta">
+            <img class="card-back" src="./img/box.png" alt="Verso da carta">
+        </div>
+        <div class="card" data-card="seagull">
+            <img class="card-front" src="./img/seagull.png" alt="Face da carta">
+            <img class="card-back" src="./img/box.png" alt="Verso da carta">
+        </div>
+        <div class="card" data-card="krill">
+            <img class="card-front" src="./img/krill.png" alt="Face da carta">
+            <img class="card-back" src="./img/box.png" alt="Verso da carta">
+        </div>
+        <div class="card" data-card="fish">
+            <img class="card-front" src="./img/fish.png" alt="Face da carta">
+            <img class="card-back" src="./img/box.png" alt="Verso da carta">
+        </div>
+    </main>
+</div>
+    <script src="./script.js"></script>
+</body>
+</html>
