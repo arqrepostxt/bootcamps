@@ -1,0 +1,7 @@
+﻿Name,Quantity,Component
+"UArduino1",1," Arduino Uno R3"
+"USensorTMP36",1," Temperature Sensor [TMP36]"
+"MDcMotor1",1," DC Motor"
+"PIEZOPiezo2",1," Piezo"
+"D1",1,"Red LED"
+"R1",1,"220 Ω Resistor"
