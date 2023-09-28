@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/main.css">
+  <link rel="stylesheet" href="./styles/button.css">
+  <link rel="stylesheet" href="./styles/containers_and_frames.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="./assets/favicon/favicon.ico">
+  <title>Js Atk Slimes</title>
+</head>
+<body>
+
+  <div class="container">
+    <div class="container__left framed-golden-2">
+
+      <div class="score_box frame">
+        <span id="score-points">Win: 0 | Health: 1000</span>
+        <br>
+        <span id="score-rank">Ferro - 0 XP</span>
+      </div>
+      <div class="menu_avatar">
+        <img id="card-image"
+        src="./assets/icons/enemy.png">
+      </div>
+      <div class="card_details frame">
+        <p id="card-name">Slime</p>
+        <p id="card-type">Water</p>
+      </div>
+
+    </div>
+
+    <div class="container__right">
+      <div class="card-box__container">
+
+        <div class="card-box framed"
+        id="computer-cards"></div>
+        <div class="card-versus__container">
+
+          <div class="versus-top">
+
+            <div class="card-infield">
+               <img 
+               id="player-field-card"
+               height="180px"
+               width="125px"
+               src="./assets/icons/hero.png">
+            </div>
+
+            <img height="100px" 
+            src="./assets/icons/versus.png">
+
+            <div class="card-infield">
+              <img id="computer-field-card"
+              height="180px"
+              width="125px"
+              src="./assets/icons/enemy.png">
+           </div>
+
+          </div>
+
+          <div class="versus-bottom">
+            <button 
+            id="next-duel"
+            class="rpgui-button"
+            onclick="resetDuel()"
+            >GANHOU</button>
+          </div>
+
+        </div>
+        <div class="card-box framed"
+        id="player-cards"></div>
+      </div>
+
+
+    </div>
+  </div>
+  
+
+  <script src="./scripts/app.js" defer>
+    
+  </script>
+</body>
+</html>
