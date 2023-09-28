@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="./assets/favicon/favicon.ico">
+  <title>Js User Rank Calc</title>
+</head>
+<body>
+  <div class="container">
+    
+    <div class="panel-left">
+
+      <form id="simpleForm" class="form-fields">
+        <label for="victories">Vitórias:</label>
+        <input type="number" id="victories" name="victories" required><br><br>
+        
+        <label for="defeats">Derrotas:</label>
+        <input type="number" id="defeats" name="defeats" required><br><br>
+        
+        <button type="button" onclick="calculate()" class="button-send">Submit</button>
+      </form>
+      
+    </div>
+
+    <div class="panel-right">
+      <div id="modal">
+        <p id="modalMessage">Calcule o rank</p>
+      </div>
+    </div>
+    
+  </div>
+
+  <!-- Modal -->
+  
+
+  <script src="./scripts/app.js" defer>
+    
+  </script>
+</body>
+</html>
