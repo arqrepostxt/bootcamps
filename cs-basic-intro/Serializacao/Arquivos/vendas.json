@@ -1,0 +1,14 @@
+[
+  {
+    "Id": 1,
+    "Produto": "Bola de Futebol",
+    "Preco": 69.99,
+    "DataVenda": "2023-09-30T14:34:47.6121185-03:00"
+  },
+  {
+    "Id": 2,
+    "Produto": "Bola de Basque",
+    "Preco": 75.99,
+    "DataVenda": "2023-09-30T14:34:47.6121185-03:00"
+  }
+]
