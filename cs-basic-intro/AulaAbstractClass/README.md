@@ -1,0 +1,2 @@
+# AulaAbstractClass
+Para revisão e fixação de conteúdos em C# sobre Heração, Herança de Construtores e mais conteúdos essenciais em C# estão disponívels códigos de aplicações em AbstractClass, InhConstructor e IntroAbstractClass.
