@@ -12,7 +12,7 @@ com o propósito de solucionar o desafio e fixar de conteúdos de C#, EntityFram
 
 ### Executar o projeto 
 
-Com o terminal na pasta raíz "AgendaTarefas" use o comando:
+Com o terminal na pasta raíz "AgendarTarefas" use o comando:
 > dotnet watch -p TrilhaApiDesafio/TrilhaApiDesafio.csproj run
 
 Se o terminal está na pasta "TrilhaDesafio" use o comando:
@@ -20,7 +20,7 @@ Se o terminal está na pasta "TrilhaDesafio" use o comando:
 
 ### Criar o banco de dados SQLite e as tabelas
 
-Se o terminal está na pasta raíz "AgendaTarefas" use o comando:
+Se o terminal está na pasta raíz "AgendarTarefas" use o comando:
 > dotnet-ef database update -p TrilhaApiDesafio/TrilhaApiDesafio.csproj
 
 Se o terminal está na pasta "TrilhaDesafio" use o comando:
