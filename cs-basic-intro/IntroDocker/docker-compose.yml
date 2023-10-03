@@ -1,0 +1,10 @@
+version: '3.1'
+
+services:
+  mysql-A:
+    image: mysql
+    container_name: mysql-A
+    environment:
+      MYSQL_ROOT_PASSWORD: Senha123
+    ports:
+      - "3306:3306"
