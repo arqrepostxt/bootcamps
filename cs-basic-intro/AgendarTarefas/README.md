@@ -24,7 +24,7 @@ Se o terminal está na pasta raíz "AgendarTarefas" use o comando:
 > dotnet-ef database update -p TrilhaApiDesafio/TrilhaApiDesafio.csproj
 
 Se o terminal está na pasta "TrilhaDesafio" use o comando:
-> dotnet-ef database update -p TrilhaApiDesafio/TrilhaApiDesafio.csproj 
+> dotnet-ef database update
 
 
 ## Desafio

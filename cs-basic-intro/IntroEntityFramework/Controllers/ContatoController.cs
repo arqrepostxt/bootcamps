@@ -8,7 +8,7 @@ namespace IntroEntityFramework.Controllers
     [Route("api/[controller]")]
     public class ContatoController : ControllerBase
     {
-        public readonly Context _context;
+        private readonly Context _context;
 
         public ContatoController(Context context)
         {
