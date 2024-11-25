@@ -22,6 +22,15 @@ O diretório apresenta uma diagramação modelo entidade relacionamento(ER) feit
 A referência do presente projeto é um sistema conceitual para uma oficina com diagram abaixo:
 ![Imagem do Diagrama Entidade Relacional](diagrama_oficina.png)
 
+1 - A partir de Cliente, o diagrama mostra que um cliente tem 1 ou vários carros no registro da oficina.
+
+2 - A oficina cria uma Ordem de Serviço(OS) para cada cliente e cada cliente pode ter várias OSs.
+
+3 - A oficina define uma Equipe com vários Mecânicos para realizar a vistoria no veículo.
+
+4 - A Equipe faz a vistoria e prepara o Valor da Ordem de Serviço fazendo o Orçamento.
+
+5 - O Orçamento contém os valores das peças necessárias para o serviço e também o valor do serviço, que é calculado com base na Tabela de Serviços que contém o custo da mão de obra por serviço.
 
 
 ## :sparkles: Recursos ##
